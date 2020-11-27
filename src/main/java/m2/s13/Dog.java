@@ -1,7 +1,7 @@
 package m2.s13;
 
 public class Dog implements WaggingBarker {
-    private final int WAG_COUNT;
+    private final int WAG_COUNT; //Poodle non potrà accedere direttamente questo ma comunque lo eredita
 
     public Dog(int wagCount) {
         WAG_COUNT = wagCount;
@@ -15,7 +15,12 @@ public class Dog implements WaggingBarker {
     public String bark() {
         return "Woof";
     }
+    
+    public void eat() {
+    	System.out.println("I'm hungry");
+    }
 
+    // questo è un overload
     public String bark(int count) {
         StringBuilder sb = new StringBuilder();
 

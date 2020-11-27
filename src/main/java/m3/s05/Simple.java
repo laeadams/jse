@@ -3,18 +3,20 @@ package m3.s05;
 public class Simple {
 	public int negate(int value) {
 		if (value == Integer.MIN_VALUE) {
-			throw new IllegalArgumentException("Can't negate MIN_VALUE");
+			throw new IllegalArgumentException("Can't negate MIN_VALUE"); // passo questo message in caso di eccezione
 		}
 		return -value;
 	}
 
 	public int negate2(int value) throws MyNegateException {
 		if (value == Integer.MIN_VALUE) {
-			throw new MyNegateException(Integer.MAX_VALUE);
+			throw new MyNegateException(Integer.MAX_VALUE);// qua mi creo una mia exception
 		}
 		return -value;
 	}
 
+	// per avviarlo a linea di comando vai in target/classes e va lì fai java m3.s05.Simple
+	// e in questo caso posso dare un paramentro:   java m3.s05.Simple 12 --> mi ritornerà -12
 	public static void main(String[] args) {
 		Simple simple = new Simple();
 

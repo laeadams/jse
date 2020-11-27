@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 class S04SumTest {
     @Test
     void sumPositive() {
-        long actual = S04.sum(1, 3);
+        long actual = S04.sum(1, 4);
 
-        assertThat(actual, is(6L));
+        assertThat(actual, is(10L));
     }
 
     @Test

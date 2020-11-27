@@ -19,4 +19,11 @@ class S03AsWordTest {
 
         assertThat(actual, is("other"));
     }
+    
+    @Test
+    void asWordAnother() {
+        String actual = S03.asWord(5);
+
+        assertThat(actual, is("five"));
+    }
 }

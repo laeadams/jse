@@ -18,4 +18,5 @@ public class Access {
     public int h() {
         return a / 2;
     }
+
 }

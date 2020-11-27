@@ -1,0 +1,21 @@
+2020-11-17 17:50:10.200 m1.s30.Main main FINEST: finest message
+2020-11-17 17:50:10.290 m1.s30.Main main FINER: finer message
+2020-11-17 17:50:10.291 m1.s30.Main main FINE: fine message
+2020-11-17 17:50:10.292 m1.s30.Main main CONFIG: config message
+2020-11-17 17:50:10.292 m1.s30.Main main INFO: info message
+2020-11-17 17:50:10.293 m1.s30.Main main WARNING: warning message
+2020-11-17 17:50:10.293 m1.s30.Main main SEVERE: severe message
+2020-11-17 17:50:10.295 m1.s30.Other f FINEST: finest message
+2020-11-17 17:50:10.297 m1.s30.Other f FINER: finer message
+2020-11-17 17:50:10.298 m1.s30.Other f FINE: fine message
+2020-11-17 17:50:10.299 m1.s30.Other f CONFIG: config message
+2020-11-17 17:50:10.299 m1.s30.Other f INFO: info message
+2020-11-17 17:50:10.300 m1.s30.Other f WARNING: warning message
+2020-11-17 17:50:10.311 m1.s30.Other f SEVERE: severe message
+2020-11-17 17:50:10.314 m1.s29.Simple f INFO: info message
+2020-11-17 17:50:10.314 m1.s29.Simple f WARNING: warning message
+2020-11-17 17:50:10.315 m1.s29.Simple f SEVERE: severe message
+2020-11-17 17:50:10.316 m1.s30.Main main SEVERE: Can't divide an integer by zero
+java.lang.ArithmeticException: / by zero
+	at m1.s30.Main.main(Main.java:42)
+

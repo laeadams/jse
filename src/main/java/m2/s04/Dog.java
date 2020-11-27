@@ -6,11 +6,19 @@ public class Dog {
     private static final Logger LOG = Logger.getGlobal();
 
     private String name;
+    private String owner;
+    // se mettessi private static ... varrebbe per tutti i cani
 
     // not a good parameter name, see "this"
-    private Dog(String nm) {
+    private Dog(String nm, String newnm) { // adesso è privato per forzare gli utenti a usare gli static factory method
         name = nm;
-        LOG.info(String.format("A new dog has been created with name [%s]", name));
+        owner = newnm;
+        LOG.info(String.format("A new dog has been created with name [%s] and owner [%s]", name, owner));
+    }
+    
+    public static Dog createWithNames(String name, String owner) {
+
+        return new Dog(name,owner);
     }
 
     public static Dog createWithNoName() {
@@ -19,11 +27,16 @@ public class Dog {
          * info on dog breed ...
          */
 
-        return new Dog("No name");
+        return new Dog("No name","no name");
     }
 
-    public static Dog createWithName(String name) {
-        return new Dog(name);
+    public static Dog createWithNameButNoOwner(String name) {
+        return new Dog(name, "no name");
+    }
+    
+    public static Dog createWithOwnerName(String owner) {
+
+        return new Dog("No name",owner);
     }
 
     public void bark() {

@@ -8,6 +8,12 @@ public class Simple {
     int f(int a, int b) {
         return a * b;
     }
+    
+    // Posso avere un metodo con nome uguale ma signature diversa (dato che i parametri hanno tipo differente [il nome...
+    // del parametro non conta])
+    //String f(String a, int b) {
+    //    return a + b;
+    //}
 
     void g(boolean flag) {
         if (flag) {

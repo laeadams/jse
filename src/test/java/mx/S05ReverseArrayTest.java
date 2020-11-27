@@ -16,4 +16,18 @@ class S05ReverseArrayTest {
             assertThat(actual[i], is(original[original.length - i - 1]));
         }
     }
+    
+    @Test
+    void reverseIntArrayPlain2() {
+    	int[] actual = S05.reverse(new int[] {34, -3, 0, 81 ,12});
+    	
+    	assertThat(actual, is(new int[] {12, 81, 0, -3, 34 }));
+    }
+    
+    @Test
+    void reverseIntArrayPlain3() {
+    	int[] actual = S05.reverse(new int[] {0, 0, 0, 0 ,0});
+    	
+    	assertThat(actual, is(new int[] {0, 0, 0, 0, 0 }));
+    }
 }

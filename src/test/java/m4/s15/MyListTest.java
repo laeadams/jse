@@ -75,8 +75,8 @@ class MyListTest {
     void getAfterPop() {
         myList.add(42);
         myList.add(12);
-        myList.pop();
-
+        int popResult = myList.pop();
+        assertThat(popResult, is(42));
         assertThat(myList.get(), is(12));
     }
 }

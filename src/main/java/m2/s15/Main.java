@@ -2,7 +2,7 @@ package m2.s15;
 
 public class Main {
     public static void main(String[] args) {
-        // Cannot instantiate
+        // Non posso istanziare la classe astratta!!!
 //        Abstract ma = new Abstract();
 //        Abstract2 ma2 = new Abstract2();
 

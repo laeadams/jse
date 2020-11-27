@@ -14,7 +14,7 @@ public class AsQueue {
         }
 
         System.out.println("The first element in queue (or throws): " + q.element());
-        System.out.println("Again, the first element (or null): " + q.peek());
+        System.out.println("Again, the first element (or null): " + q.peek()); // se uso peek devo stare attento al null!!
 
         System.out.println("Remove (or throws): " + q.remove());
         System.out.println("Poll (or null): " + q.poll());

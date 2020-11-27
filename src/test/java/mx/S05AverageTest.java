@@ -12,4 +12,11 @@ class S05AverageTest {
 
         assertThat(actual, is(2.0));
     }
+    
+    @Test
+    void averagePlain2() {
+        double actual = S05.average(new int[] { -1, 0, 1 });
+
+        assertThat(actual, is(0.0));
+    }
 }

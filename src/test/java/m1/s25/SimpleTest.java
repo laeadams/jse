@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class SimpleTest {
 
     @Test
-    void negate() {
+    void negateVanilla() {
         fail("Not yet implemented");
     }
 }

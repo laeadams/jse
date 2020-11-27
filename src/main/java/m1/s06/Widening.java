@@ -10,8 +10,9 @@ public class Widening {
         double d = f;
 
         System.out.println(d);
-
-        char c = (char) s;
+        
+        
+        char c = (char) s; // cast esplicit
         int i2 = c;
         System.out.println(c + " " + i2);
         
@@ -21,7 +22,7 @@ public class Widening {
         System.out.println(x + ", " + x2);
         
         long bigValueL = 1_000_000_000_000_000_000L;
-        float bigValueF = bigValueL;
+        float bigValueF = bigValueL; // non passare da long a float
         double bigValueD = bigValueL;
         System.out.println(bigValueL + ", " + bigValueF + ", " + bigValueD);
         System.out.println(String.format("%.0f, %.0f", bigValueF, bigValueD));

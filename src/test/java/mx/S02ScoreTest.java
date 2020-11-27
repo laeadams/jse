@@ -19,4 +19,11 @@ class S02ScoreTest {
 
         assertThat(actual, is(1));
     }
+    
+    @Test
+    void scoreLimit() {
+    	int actual = S02.score(1.0,0.0);
+    	assertThat(actual,is(10));
+    }
 }
+ 

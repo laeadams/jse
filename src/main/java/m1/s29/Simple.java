@@ -3,6 +3,8 @@ package m1.s29;
 import java.util.logging.Logger;
 
 public class Simple {
+	
+	// si crea un oggetto Logger chiamato LOG
     private static final Logger LOG = Logger.getLogger(Simple.class.getName());
 
     public void f() {

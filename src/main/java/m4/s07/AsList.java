@@ -24,7 +24,7 @@ public class AsList {
         try {
             int badPos = 100;
             list.add(badPos, value);
-        } catch (Exception ex) {
+        } catch (Exception ex) { // faccio una catch su Exception per non doverne fare una per ogni sublclass di Exception
             LOG.log(Level.SEVERE, "Careful with indices!", ex);
         }
 

@@ -2,7 +2,8 @@ package m2.s16;
 
 import java.util.logging.Logger;
 
-public class Tail extends Object {
+				   // questo non lo scrivo tanto è sottointeso
+public class Tail /*extends Object*/ {
     private static final Logger LOG = Logger.getGlobal();
     private int size;
 
@@ -10,6 +11,7 @@ public class Tail extends Object {
         this.size = size;
     }
 
+    // questo è un metodo "getter"
     public int getSize() {
         return size;
     }
